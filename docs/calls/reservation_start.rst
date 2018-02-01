@@ -17,12 +17,12 @@ connector-id
    The EVSE ID that identifies the connector where the session should take place (string).
 
 identifier
-   array of objects containing EVCO ID and UID (optional)
+   array of objects containing EVCO ID and UID
 
-   evco-id (string)
-       The EVCO-ID of the Customer.
-   rfid (string) (optional)
-       RFID (UID) of the Customer.
+   evco-id
+       The EVCO-ID of the Customer. (string)
+   rfid
+       RFID (UID) of the Customer. (string) (optional)
 
 Response
 --------
