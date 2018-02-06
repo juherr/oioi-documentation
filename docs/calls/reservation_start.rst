@@ -21,8 +21,8 @@ identifier
 
    evco-id
        The EVCO-ID of the Customer. (string)
-   rfid
-       RFID (UID) of the Customer. (string) (optional)
+   rfid (optional)
+       RFID (UID) of the Customer. (string)
 
 Response
 --------
