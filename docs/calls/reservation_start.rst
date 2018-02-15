@@ -30,8 +30,8 @@ Response
 Fields
 ~~~~~~
 
-time
-   Indicates the time in seconds from now till the reservation window closes (integer).
+end
+   Indicates the datetime when the reservation window closes (string; format RFC3339 ``"2016-05-09T04:08:06+02:00"``).
 
 HTTP Status codes
 ~~~~~~~~~~~~~~~~~
@@ -80,7 +80,7 @@ Successful Response::
 
     {
         "reservation-start": {
-            "time": 300,
+            "end": "2016-05-09T04:08:06+02:00"
         },
         "result": {
             "code": 0,
