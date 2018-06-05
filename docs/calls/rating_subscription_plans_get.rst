@@ -1,16 +1,16 @@
 .. highlight:: js
 
-.. _calls-ratingsubscriptionplansget-docs:
+.. _calls-usersubscriptionplansget-docs:
 
-Get Rating Subscription Plans
-=============================
+Get Subscription Plans
+======================
 
 This request will return list of available Subscription Plans for the given user.
 
 Request
 -------
 
-``"rating-subscription-plans-get"`` identifies the call as a rating-subscription-plans-get call.
+``"user-subscription-plans-get"`` identifies the call as a user-subscription-plans-get call.
 
 Fields
 ~~~~~~
@@ -142,7 +142,7 @@ Examples
 Request::
 
     {
-        "rating-subscription-plans-get": {
+        "user-subscription-plans-get": {
             "user": {
                 "identifier-type": "username",
                 "identifier": "some_user",

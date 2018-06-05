@@ -1,8 +1,8 @@
 .. highlight:: js
 
-.. _calls-userratingsubscription-docs:
+.. _calls-usermanagesubscription-docs:
 
-User Rating Subscription
+User Manage Subscription
 ========================
 
 With this request user can subscribe to one of available subscription plans or cancel already active subscription.
@@ -16,7 +16,7 @@ With this request user can subscribe to one of available subscription plans or c
 Request
 -------
 
-``"user-rating-subscription"`` identifies the call as a user-rating-subscription call.
+``"user-manage-subscription"`` identifies the call as a user-manage-subscription call.
 
 Fields
 ~~~~~~
@@ -47,8 +47,8 @@ user
 id
     ID of Subscription Plan for which we want to start/cancel subscription (int).
 
-subscribe
-    `true` if we want to subscribe. `false` if we want to cancel subscription (bool).
+cancel (optional)
+    `false` or empty if we want to subscribe. `true` if we want to cancel subscription (bool).
 
 
 Response
@@ -85,14 +85,14 @@ Examples
 Request::
 
     {
-        "user-rating-subscription": {
+        "user-manage-subscription": {
             "user": {
                 "identifier-type": "username",
                 "identifier": "some_user",
                 "token": "b3853b6d910849f3b4392555b8acb984"
             },
             "id": 1,
-            "subscribe": true
+            "cancel": false
         }
     }
 
