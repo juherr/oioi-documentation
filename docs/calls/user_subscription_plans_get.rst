@@ -2,8 +2,8 @@
 
 .. _calls-usersubscriptionplansget-docs:
 
-Get Subscription Plans
-======================
+User Subscription Plans Get
+===========================
 
 This request will return list of available Subscription Plans for the given user.
 

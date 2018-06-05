@@ -48,7 +48,7 @@ id
     ID of Subscription Plan for which we want to start/cancel subscription (int).
 
 cancel (optional)
-    `false` or empty if we want to subscribe. `true` if we want to cancel subscription (bool).
+    `false` or omitted if we want to subscribe. `true` if we want to cancel subscription (bool).
 
 
 Response
