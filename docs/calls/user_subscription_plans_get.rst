@@ -51,7 +51,7 @@ subscription-plans
         Subscription plan id (int).
 
     localized-names
-        Localized name of the subscription plan (array).
+        Localized name of the subscription plan (object, format: ``{"language": "text"}``).
 
         language
             Localization language (string).
@@ -60,7 +60,7 @@ subscription-plans
             Localized name of the subscription plan (string)
 
     localized-descriptions
-        Localized desciption of the subscription plan (array).
+        Localized desciption of the subscription plan (object, format: ``{"language": "text"}``).
 
         language
             Localization language (string).
@@ -158,16 +158,12 @@ Response::
         {
           "id": 2,
           "localized-names": {
-            "1": {
-              "language": "en",
-              "text": "Name"
-            }
+            "en": "Name",
+            "de": "Name"
           },
           "localized-descriptions": {
-            "1": {
-              "language": "en",
-              "text": "Description"
-            }
+            "en": "Description",
+            "de": "Beschreibung"
           },
           "duration": 12,
           "valid-from": "2018-05-18T00:00:00+02:00",
