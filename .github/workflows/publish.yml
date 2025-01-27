@@ -27,7 +27,7 @@ jobs:
           make html
 
       - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: docs/_build/html
 
